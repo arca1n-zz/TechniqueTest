@@ -14,6 +14,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.techniques = @[@"blur", @"nightvision"];
 
     // create a new scene
     SCNScene *scene = [SCNScene sceneNamed:@"art.scnassets/ship.dae"];
@@ -22,9 +24,8 @@
     SCNNode *cameraNode = [SCNNode node];
     cameraNode.camera = [SCNCamera camera];
     [scene.rootNode addChildNode:cameraNode];
-    NSURL *url;
-    url = [[NSBundle mainBundle] URLForResource:@"firstPass" withExtension:@"plist"];
-    SCNTechnique *firstTechnique = [SCNTechnique techniqueWithDictionary:[NSDictionary dictionaryWithContentsOfURL:url]];
+    
+    // Create the technique
     
     //cameraNode.camera.technique = firstTechnique;
     
@@ -56,8 +57,9 @@
     // retrieve the SCNView
     SCNView *scnView = (SCNView *)self.view;
     
-    scnView.technique = firstTechnique;
-    
+    //scnView.technique = firstTechnique;
+    currentTechniqueIndex = -1;
+    [self nextTechnique];
     // set the scene to the view
     scnView.scene = scene;
     
@@ -99,8 +101,21 @@
     scnView.gestureRecognizers = gestureRecognizers;
 }
 
+- (void)nextTechnique {
+    SCNView *scnView = (SCNView *)self.view;
+    currentTechniqueIndex++;
+    if (currentTechniqueIndex == self.techniques.count ) {
+        currentTechniqueIndex = 0;
+    }
+    NSURL *url;
+    url = [[NSBundle mainBundle] URLForResource:[self.techniques objectAtIndex:currentTechniqueIndex] withExtension:@"plist"];
+    SCNTechnique *technique = [SCNTechnique techniqueWithDictionary:[NSDictionary dictionaryWithContentsOfURL:url]];
+    scnView.technique = technique;
+}
+
 - (void) handleTap:(UIGestureRecognizer*)gestureRecognize
 {
+    [self nextTechnique];
     // retrieve the SCNView
     SCNView *scnView = (SCNView *)self.view;
     

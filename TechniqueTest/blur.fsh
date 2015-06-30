@@ -25,6 +25,7 @@ void main()
     
     vec4 noise = texture2D(noiseSampler, v_texCoord);
     
-    gl_FragColor = gl_FragColor + noise;
+    gl_FragColor = gl_FragColor
+    * noise;
     
 }

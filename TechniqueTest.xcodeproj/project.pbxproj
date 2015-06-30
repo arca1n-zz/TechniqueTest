@@ -15,13 +15,17 @@
 		C426D31C1A9BB4E70018F7BC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C426D31B1A9BB4E70018F7BC /* Images.xcassets */; };
 		C426D31F1A9BB4E70018F7BC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C426D31D1A9BB4E70018F7BC /* LaunchScreen.xib */; };
 		C426D32B1A9BB4E80018F7BC /* TechniqueTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C426D32A1A9BB4E80018F7BC /* TechniqueTestTests.m */; };
-		C426D3371A9BB5AE0018F7BC /* firstPass.plist in Resources */ = {isa = PBXBuildFile; fileRef = C426D3341A9BB5AE0018F7BC /* firstPass.plist */; };
+		C426D3371A9BB5AE0018F7BC /* blur.plist in Resources */ = {isa = PBXBuildFile; fileRef = C426D3341A9BB5AE0018F7BC /* blur.plist */; };
 		C426D3381A9BB5AE0018F7BC /* render.fsh in Resources */ = {isa = PBXBuildFile; fileRef = C426D3351A9BB5AE0018F7BC /* render.fsh */; };
 		C426D3391A9BB5AE0018F7BC /* render.vsh in Resources */ = {isa = PBXBuildFile; fileRef = C426D3361A9BB5AE0018F7BC /* render.vsh */; };
 		C426D33C1A9BD09E0018F7BC /* ClipNode.m in Sources */ = {isa = PBXBuildFile; fileRef = C426D33B1A9BD09E0018F7BC /* ClipNode.m */; };
 		C4D47CD91AA11ECE009D9E2D /* noise.png in Resources */ = {isa = PBXBuildFile; fileRef = C4D47CD81AA11ECE009D9E2D /* noise.png */; };
 		C4D47CDB1AA12180009D9E2D /* blur.vsh in Resources */ = {isa = PBXBuildFile; fileRef = C4D47CDA1AA12180009D9E2D /* blur.vsh */; };
 		C4D47CDD1AA1218C009D9E2D /* blur.fsh in Resources */ = {isa = PBXBuildFile; fileRef = C4D47CDC1AA1218C009D9E2D /* blur.fsh */; };
+		C4E50CB31B42697D007FA20F /* nightvision.plist in Resources */ = {isa = PBXBuildFile; fileRef = C4E50CB21B42697D007FA20F /* nightvision.plist */; };
+		C4E50CB51B426A72007FA20F /* nightvision.vsh in Resources */ = {isa = PBXBuildFile; fileRef = C4E50CB41B426A72007FA20F /* nightvision.vsh */; };
+		C4E50CB71B426A7E007FA20F /* nightvision.fsh in Resources */ = {isa = PBXBuildFile; fileRef = C4E50CB61B426A7E007FA20F /* nightvision.fsh */; };
+		C4E50CB91B426AE4007FA20F /* mask.png in Resources */ = {isa = PBXBuildFile; fileRef = C4E50CB81B426AE4007FA20F /* mask.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +53,7 @@
 		C426D3241A9BB4E80018F7BC /* TechniqueTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TechniqueTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C426D3291A9BB4E80018F7BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C426D32A1A9BB4E80018F7BC /* TechniqueTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TechniqueTestTests.m; sourceTree = "<group>"; };
-		C426D3341A9BB5AE0018F7BC /* firstPass.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = firstPass.plist; sourceTree = "<group>"; };
+		C426D3341A9BB5AE0018F7BC /* blur.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = blur.plist; sourceTree = "<group>"; };
 		C426D3351A9BB5AE0018F7BC /* render.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = render.fsh; sourceTree = "<group>"; };
 		C426D3361A9BB5AE0018F7BC /* render.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = render.vsh; sourceTree = "<group>"; };
 		C426D33A1A9BD09E0018F7BC /* ClipNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClipNode.h; path = TechniqueTest/ClipNode.h; sourceTree = "<group>"; };
@@ -57,6 +61,10 @@
 		C4D47CD81AA11ECE009D9E2D /* noise.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noise.png; sourceTree = "<group>"; };
 		C4D47CDA1AA12180009D9E2D /* blur.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = blur.vsh; sourceTree = "<group>"; };
 		C4D47CDC1AA1218C009D9E2D /* blur.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = blur.fsh; sourceTree = "<group>"; };
+		C4E50CB21B42697D007FA20F /* nightvision.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = nightvision.plist; sourceTree = "<group>"; };
+		C4E50CB41B426A72007FA20F /* nightvision.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = nightvision.vsh; sourceTree = "<group>"; };
+		C4E50CB61B426A7E007FA20F /* nightvision.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = nightvision.fsh; sourceTree = "<group>"; };
+		C4E50CB81B426AE4007FA20F /* mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mask.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,10 +108,8 @@
 		C426D30B1A9BB4E70018F7BC /* TechniqueTest */ = {
 			isa = PBXGroup;
 			children = (
-				C4D47CD81AA11ECE009D9E2D /* noise.png */,
-				C426D3341A9BB5AE0018F7BC /* firstPass.plist */,
-				C426D3351A9BB5AE0018F7BC /* render.fsh */,
-				C426D3361A9BB5AE0018F7BC /* render.vsh */,
+				C4E50CBB1B4270F8007FA20F /* textures */,
+				C4E50CBA1B4270DB007FA20F /* techniques */,
 				C426D3101A9BB4E70018F7BC /* AppDelegate.h */,
 				C426D3111A9BB4E70018F7BC /* AppDelegate.m */,
 				C426D3131A9BB4E70018F7BC /* art.scnassets */,
@@ -113,8 +119,6 @@
 				C426D31B1A9BB4E70018F7BC /* Images.xcassets */,
 				C426D31D1A9BB4E70018F7BC /* LaunchScreen.xib */,
 				C426D30C1A9BB4E70018F7BC /* Supporting Files */,
-				C4D47CDA1AA12180009D9E2D /* blur.vsh */,
-				C4D47CDC1AA1218C009D9E2D /* blur.fsh */,
 			);
 			path = TechniqueTest;
 			sourceTree = "<group>";
@@ -143,6 +147,30 @@
 				C426D3291A9BB4E80018F7BC /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C4E50CBA1B4270DB007FA20F /* techniques */ = {
+			isa = PBXGroup;
+			children = (
+				C426D3351A9BB5AE0018F7BC /* render.fsh */,
+				C426D3361A9BB5AE0018F7BC /* render.vsh */,
+				C4D47CDA1AA12180009D9E2D /* blur.vsh */,
+				C4D47CDC1AA1218C009D9E2D /* blur.fsh */,
+				C4E50CB41B426A72007FA20F /* nightvision.vsh */,
+				C4E50CB61B426A7E007FA20F /* nightvision.fsh */,
+				C4E50CB21B42697D007FA20F /* nightvision.plist */,
+				C426D3341A9BB5AE0018F7BC /* blur.plist */,
+			);
+			name = techniques;
+			sourceTree = "<group>";
+		};
+		C4E50CBB1B4270F8007FA20F /* textures */ = {
+			isa = PBXGroup;
+			children = (
+				C4E50CB81B426AE4007FA20F /* mask.png */,
+				C4D47CD81AA11ECE009D9E2D /* noise.png */,
+			);
+			name = textures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,14 +255,18 @@
 			files = (
 				C4D47CDB1AA12180009D9E2D /* blur.vsh in Resources */,
 				C426D31F1A9BB4E70018F7BC /* LaunchScreen.xib in Resources */,
+				C4E50CB31B42697D007FA20F /* nightvision.plist in Resources */,
 				C426D3391A9BB5AE0018F7BC /* render.vsh in Resources */,
 				C4D47CDD1AA1218C009D9E2D /* blur.fsh in Resources */,
 				C4D47CD91AA11ECE009D9E2D /* noise.png in Resources */,
 				C426D31C1A9BB4E70018F7BC /* Images.xcassets in Resources */,
-				C426D3371A9BB5AE0018F7BC /* firstPass.plist in Resources */,
+				C4E50CB91B426AE4007FA20F /* mask.png in Resources */,
+				C426D3371A9BB5AE0018F7BC /* blur.plist in Resources */,
+				C4E50CB51B426A72007FA20F /* nightvision.vsh in Resources */,
 				C426D3381A9BB5AE0018F7BC /* render.fsh in Resources */,
 				C426D3141A9BB4E70018F7BC /* art.scnassets in Resources */,
 				C426D31A1A9BB4E70018F7BC /* Main.storyboard in Resources */,
+				C4E50CB71B426A7E007FA20F /* nightvision.fsh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
